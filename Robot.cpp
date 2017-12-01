@@ -45,8 +45,8 @@ public:
 		}
 		if(driverController->GetRawAxis(5) < 2.4 || driverController->GetRawAxis(5) > -2.4)
 				{
-					fR->Set(driverController->GetRawAxis(5));
-					bR->Set(driverController->GetRawAxis(5));
+					fR->Set(-driverController->GetRawAxis(5));
+					bR->Set(-driverController->GetRawAxis(5));
 				}
 	}
 
